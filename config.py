@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://b0bb9ed25d92d9:3e2b948e@us-cdbr-iron-east-04.cleardb.net/heroku_d7180f86b5a7956'
