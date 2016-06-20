@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask.json import jsonify
 from app.models import Ocorrencia, FatorContribuinte, Aeronave
