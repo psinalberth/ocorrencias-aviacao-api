@@ -4,6 +4,7 @@ flask-marshmallow==0.6.2
 Flask-Migrate==1.8.0
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
+gunicorn==19.1.1
 marshmallow==2.7.3
 marshmallow-sqlalchemy==0.8.1
 pycurl==7.43.0

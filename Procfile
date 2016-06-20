@@ -1,1 +1,1 @@
-web: python3 app.py
+web: gunicorn ocorrencias-aviacao-api:app --log-file -
