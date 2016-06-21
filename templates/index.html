@@ -9,25 +9,25 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <head>
-	<title>API de Ocorrencias do CENIPA</title>
+	<title>API de Ocorrências do CENIPA</title>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="page-header">
-			<h1>API de Ocorrencias Aeronauticas</h1>
+			<h1>API de Ocorrências Aeronauticas</h1>
 		</div>
 	<section>
-		Com o objetivo de disponibilizar os dados de ocorrencias aeronauticas registradas pelo <a href="http://www.cenipa.aer.mil.br/cenipa/index.php">CENIPA</a> - Centro de Inverstigaçao e Prevençao de Acidentes Aeronauticos - foi criada uma <a href="https://pt.wikipedia.org/wiki/REST">API REST</a>, a partir dos dados disponibilizados pelo Centro no formato .csv, a qual pode ser acessada e consumida por diversas aplicacoes e/ou serviços.
+		Com o objetivo de disponibilizar os dados de ocorrências aeronáuticas registradas pelo <a href="http://www.cenipa.aer.mil.br/cenipa/index.php">CENIPA</a> - Centro de Investigação e Prevenção de Acidentes Aeronáuticos - foi criada uma <a href="https://pt.wikipedia.org/wiki/REST">API REST</a>, a partir dos dados disponibilizados pelo Centro no formato .csv, a qual pode ser acessada e consumida por diversas aplicações e/ou serviços.
 	</section>
 
-	<h3>Consultas Disponiveis</h3>
+	<h3>Consultas Disponíveis</h3>
 
 	<table class="table table-bordered table-hover table-responsive">
 	  <thead>
 	    <tr>
 	      <th>#</th>
 	      <th>Endpoint</th>
-	      <th>Descricao</th>
+	      <th>Descrição</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -37,12 +37,12 @@
 	    <tr>
 	      <th scope="row">1</th>
 	      <td>/api/tipos_ocorrencia</td>
-	      <td>Obtem todos os tipos de ocorrencia registrados.</td>
+	      <td>Obtém todos os tipos de ocorrência registrados.</td>
 	    </tr>
 	    <tr>
 	      <th scope="row">2</th>
 	      <td>/api/tipos_classificacao</td>
-	      <td>Obtem todas as classificacoes para ocorrencias registradas.</td>
+	      <td>Obtém todas as classificacoes para ocorrências registradas.</td>
 	    </tr>
 	  	<tr>
 	      <th colspan="3" style="background:#eeeeee">Ocorrencias</th>     
@@ -50,32 +50,32 @@
 	    <tr>
 	      <th scope="row">1</th>
 	      <td>/api/ocorrencias</td>
-	      <td>Recupera todas as ocorrencias registradas.</td>
+	      <td>Recupera todas as ocorrências registradas.</td>
 	    </tr>
 	    <tr>
 	      <th scope="row">2</th>
 	      <td>/api/ocorrencias/<:codigo_ocorrencia></td>
-	      <td>Recupera uma ocorrencia detalhada selecionada atraves do codigo da ocorrencia.</td>
+	      <td>Recupera uma ocorrência detalhada selecionada através do código da ocorrência.</td>
 	    </tr>
 	    <tr>
 	      <th scope="row">3</th>
 	      <td>/api/ocorrencias/<:codigo_ocorrencia>/fatores</td>
-	      <td>Recupera os fatores contribuintes para uma ocorrencia selecionada.</td>
+	      <td>Recupera os fatores contribuintes para uma ocorrência selecionada.</td>
 	    </tr>
 	    <tr>
 	      <th scope="row">4</th>
 	      <td>/api/ocorrencias/<:codigo_ocorrencia>/aeronaves</td>
-	      <td>Obtem as aeronaves envolvidas em uma ocorrencia selecionada.</td>
+	      <td>Obtém as aeronaves envolvidas em uma ocorrência selecionada.</td>
 	    </tr>
 	    <tr>
 	      <th scope="row">5</th>
 	      <td>/api/ocorrencias/entre/<:data_inicio>/<:data_fim></td>
-	      <td>Obtem as ocorrencias registradas em um intervalo de datas.</td>
+	      <td>Obtém as ocorrências registradas em um intervalo de datas.</td>
 	    </tr>
 	    <tr>
 	      <th scope="row">6</th>
 	      <td>/api/ocorrencias/uf/<:uf></td>
-	      <td>Recupera as ocorrencias registradas em um unico estado.</td>
+	      <td>Recupera as ocorrências registradas em um unico estado.</td>
 	    </tr>
 
 	    <tr>
@@ -89,7 +89,7 @@
 	    <tr>
 	      <th scope="row">2</th>
 	      <td>/api/aeronaves/modelos_mais_ocorrencias</td>
-	      <td>Recupera os modelos de aeronave com mais ocorrencias registradas.</td>
+	      <td>Recupera os modelos de aeronave com mais ocorrências registradas.</td>
 	    </tr> 
 
 	  </tbody>
