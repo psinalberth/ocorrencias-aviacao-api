@@ -8,8 +8,6 @@ app.config['JSON_AS_ASCII'] = True
 
 #Include config from config.py
 app.config.from_object('config')
-app.config['SQLALCHEMY_POOL_RECYCLE'] = 299
-app.config['SQLALCHEMY_POOL_TIMEOUT'] = 3600
 app.secret_key = 'some_secret'
 
 #Create an instance of SQLAclhemy
