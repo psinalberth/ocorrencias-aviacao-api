@@ -1,5 +1,7 @@
 from app import db
 
+# Definicao do modelo Ocorrencia
+
 class Ocorrencia(db.Model):
 	codigo_ocorrencia = db.Column(db.Integer, primary_key=True)
 	classificacao = db.Column(db.String(30))
@@ -23,13 +25,11 @@ class Ocorrencia(db.Model):
 	aeronaves = db.relationship('Aeronave', backref=db.backref('ocorrencia', lazy='joined'), lazy='dynamic')
 	fatores = db.relationship('FatorContribuinte', backref=db.backref('ocorrencia', lazy='joined'), lazy='dynamic')
 
-	@property
-	def serialize(self):	
-		return self.localidade
+# Definicao do modelo Aeronave
 
 class Aeronave(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
-	codigo_aeronave = db.Column(db.Integer, primary_key=True)
+	codigo_aeronave = db.Column(db.Integer)
 	codigo_ocorrencia = db.Column(db.Integer, db.ForeignKey('ocorrencia.codigo_ocorrencia'))
 	matricula = db.Column(db.String(10))
 	codigo_operador = db.Column(db.Integer)
@@ -52,6 +52,7 @@ class Aeronave(db.Model):
 	quantidade_fatalidades = db.Column(db.Integer, default=0)
 	dia_extracao = db.Column(db.Date)
 
+# Definicao do modelo FatorContribuinte
 
 class FatorContribuinte(db.Model):
 	codigo_fator = db.Column(db.Integer, primary_key=True)

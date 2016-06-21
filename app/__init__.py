@@ -14,5 +14,11 @@ app.secret_key = 'some_secret'
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
+@app.after_request
+def after_request(response):
+	response.headers.add('Access-Control-Allow-Origin', '*')
+	response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+	response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')	
+	return response
 
 
